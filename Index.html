@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta name = "viewport" content="width=device-width, initial-scale=1">
+        <link href="index.css" rel="stylesheet">   
+        
+
+    </head>
+
+    <body>
+        <header>
+            <div class="virus virus-left"></div>
+            <h1 id="titulo-principal">Reporte Coronavirus</h1>
+            <p id="subtitulo">Una fuente rápida de información sobre el COVID-19</p>
+            <div class="virus virus-right"></div>
+        </header>
+        
+        <main class="row col-sm-1 col-md-1 col-2 container">
+            <article class="container">
+                <header>
+                    <h2>A la fecha existen <span id="global-confirmados"></span> de casos confirmados de Coronavirus al rededor del mundo.</h2>
+                </header>
+                
+                <figure class="highcharts-figure">
+                    <div id="container"></div>
+                    <p class="highcharts-description">
+                        Grafico que muestra la situación sobre los casos de COVID-19 en paises que superan las 20000 defunciones. 
+                    </p>
+                </figure>
+
+
+                <main>
+                    <p>Desde la última semana ha incrementado #,### casos en el mundo, o un #%</p>
+                </main>
+            </article>
+
+            <article class="container">
+                <header>
+                    <h2>México está lidiando actualmente con <span id="mexico-activos"></span> casos activos.</h2>
+                </header>
+
+                <figure class="highcharts-figure">
+                <div id = "cointainer-map-mx"></div>
+                </figure>
+
+                <main>
+                    <p>#% de la población tiene o ha tenido coronavirus. Más casos no reportados podrían estar en casa enfermos.</p>
+                </main>
+            </article>
+            <article class="container">
+                <header>
+                    <h2><span id="mexico-muertos"></span> personas han muerto por coronavirus en México.</h2>
+                </header>
+
+                <figure class="highcharts-figure">
+                <div id = "cointainer-map-edos-mx"></div>
+                </figure>
+                <main>
+                    <p>Esto representa un #% de tasa de mortalidad. En comparación, la tasa de mortalidad de la gripa estacional es tipicamente de alrededor de 0.1% en los Estados Unidos, de acuerdo al New York.</p>
+                </main>
+            </article>
+            
+        </main>
+
+        <footer class="row col-sm-1 col-md-2 col-2">
+            <section>
+                <h3>Reporte Coronavirus</h3>
+                <img src="coronavirus.png" width="64px">
+                <p>Sitio informativo desarrollado por estudiantes del ITSUR para la materia de Programación Web III.</p>
+            </section>
+            <section>
+                <h4>Contáctanos</h4>
+                <form>
+                    <label for="email">Email</label>
+                    <input type = "email" id="email" name="email" placeholder="Tu email..." required minlength="8">
+                    
+                    <label for = "mensaje">Mensaje</label>
+                    <textarea id="mensaje" name="mensaje" placeholder="Cuéntanos algo..." required minlength="1" style="height: 100px"></textarea>
+                    
+                    <button id="btnEnviar">Enviar</button>
+                </form>
+            </section>
+        </footer>
+
+        <script src="https://code.highcharts.com/maps/highmaps.js"></script>
+        <script src="https://code.highcharts.com/maps/modules/exporting.js"></script>
+        <script src="https://code.highcharts.com/mapdata/countries/mx/mx-all.js"></script>
+        <!--<script src="https://code.highcharts.com/highcharts.js"></script>-->
+        <script src="https://code.highcharts.com/modules/export-data.js"></script>
+        <script src="https://code.highcharts.com/modules/accessibility.js"></script>
+        <script src="index.js"></script>
+    </body>
+</html>
